@@ -1,0 +1,13 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace
+}
+body 
+{
+    background-color: #EEE;
+}
+h1
+{
+    font-size: 3rem;
+    margin: 0
+}
