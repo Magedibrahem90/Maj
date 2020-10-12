@@ -2,7 +2,6 @@
     box-sizing: border-box;
 }
 /* nav-bar */
-
 #Main-nav-bar #nav-bar-container
 {
     background-color: #fff;
@@ -45,17 +44,75 @@
     color:#FFF;
     background-color: #3671C7;
 }
-#Main-nav-bar #nav-bar-container #navbarSupportedContent ul li  #borderleft i { 
-    border-left: 2px solid #b2b2b2 ;
-    padding-left: 8px;
-}
-#Main-nav-bar #nav-bar-container #navbarSupportedContent ul li  #borderright i { 
-    border-right: 2px solid #b2b2b2 ;
-    padding-right: 8px;
-}
 /* end nav-bar */
 /*``````````````````````````*/
 /* Content  */
+
+/* header */
+section#header {
+    background-color: #3671C7;
+    height: 371px;
+    width: auto;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+ .header-container .header-title{
+     color: #FFFFFF; 
+} 
+.header-container .header-title h2{
+    font-size: 40px;
+} 
+.header-container .header-title p{
+    font-size: 20px;
+} 
+/* end header */
+/* start slider */
+
+#main-content .carousel-inner
+{
+   
+    text-align: center;
+}
+#main-content #contact h1
+{
+   padding-bottom: 50px;
+}
+#main-content #contact h3
+{
+   color: #3671C7;
+   
+}
+#main-content .social-container .social-icon 
+{
+    display: flex;
+    justify-content: center;
+}
+#main-content .social-container .social-icon i
+{
+    padding: 1.5rem;
+    color: #121212;
+}
+#contact h1 {
+    font-weight: 600;
+}
+
+#contact h3 {
+    font-size: 20px;
+    font-weight: 650;
+}
+#contact p {
+    color: #121212;
+    font-weight: 500;
+}
+    
+
+/* end slider */
+
+
+
+
+
 
 
 
