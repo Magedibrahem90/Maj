@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap style-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- bootstrap script  -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <!-- Font awsome  -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="AboutUs-ContactUs.css">
+    <title>AboutUs-ContactUs</title>
+</head>
+<body>
+    <!-- Main nav-bar -->
+    <section id="Main-nav-bar">
+        <main>
+            <nav class="navbar navbar-expand-lg navbar-light container" id="nav-bar-container">
+                <a class="navbar-brand" href="#">
+                    <img src="https://picsum.photos/200/40" alt="Footer logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                    <form class="form-inline my-2 my-lg-0" id="nav-form">
+                        <input class="form-control" type="search" aria-label="Search">
+                        <button class="btn btn-info my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#" id="pro">Entasher Pro</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">About Entasher</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Ooh my brand!
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <button class="btn" id="send-req-btn">Send a <br>Request</button>
+                </div>
+              </nav>
+        </main>
+    </section>
+    <!-- end nav-bar -->
+    <!-- Page-content-->
+    <!-- header -->
+    <section id="header">
+        <div class="container-fluid" id="">
+            <div class="header-container">
+                <div class="row">
+                    <div class="col-md-12 ">
+                        <div class="header-title">
+                         <h2>Contact Us</h2>
+                         <p>Don’t Hesitate to Send Us</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of header -->
+     <!-- slider -->
+    <section id="main-content" class="py-5">
+        <div>
+            <style>
+                #slider-carsoul-parent
+                {
+                    position: unset;
+                    border-bottom: 1px solid gray;
+                }
+                #slider-carsoul-parent li 
+                {
+                    text-indent:unset;
+                    padding: 1rem;
+                    width: unset;
+                    height: unset;
+                    color:#121212;
+                    background-color: unset;
+                    opacity: unset;
+                    font-weight: bold;
+                    font-weight: 8px;
+                }
+                #slider-carsoul-parent li.active
+                {
+                    color:blue;
+                    border-bottom: 5px solid blue;
+                    
+                }
+            </style>
+            <ol class="carousel-indicators" id="slider-carsoul-parent">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0">
+                    <span>About us</span>
+                </li>
+                
+                <li  data-target="#carouselExampleIndicators" data-slide-to="1">
+                    <span>Careers</span>
+                </li>
+                <li class="active" data-target="#carouselExampleIndicators" data-slide-to="2">
+                    <span>Contact</span>
+                </li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3">
+                    <span>FAQ</span>
+                </li>
+              </ol>
+            
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item ">
+                      <section id="about-us">
+                          <div class="container">
+                             <div class="row">
+                                  <div class="col-md-12">
+                                      <h1>Don’t hesitate to contact us</h1>
+                                  </div>
+                              </div>
+                             <div class="row">
+                                  <div class="col-md-6">
+                                      <h3>OFFICE ADDRESS</h3>
+                                      <p>5069 Megawra 5, El Mearag <br/> Cairo, Egypt</p>
+                                  </div>
+                                  <div class="col-md-6">
+                                      <h3>Phone Number</h3>
+                                      <p>(+202) 25240440</p>
+
+                                  </div>
+                              </div>
+                             <div class="row">
+                                <div class="col-md-6">
+                                    <h3>EMAIL ADDRESS</h3>
+                                    <p>info@Entasher.com</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <h3>MOBILE NUMBER</h3>
+                                    <p>01113994443</p>
+                                </div>
+                              </div>
+                            <div class="row">
+                             <div class="col-md-12">
+                                    <h3>Follow us on social media</h3>
+                              </div>
+                            </div>
+                              <div class="social-container">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="social-icon">
+                                            <div class="icon">
+                                                <a href="https://www.facebook.com" title="twitter">
+                                                    <i class="fab fa-twitter"></i>
+                                                </a>
+                                            </div>
+                                            <div class="icon">
+                                                <a href="https://www.facebook.com" title="Facebook">
+                                                    <i class="fab fa-facebook-f"></i>
+                                                </a>
+                                            </div>
+                                            <div class="icon">
+                                                <a href="https://www.facebook.com" title="linkedin">
+                                                    <i class="fab fa-linkedin-in"></i>
+                                                </a>
+                                            </div>
+                                            <div class="icon">
+                                                <a href="https://www.facebook.com" title="instagram">
+                                                    <i class="fab fa-instagram"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                          </div>
+                       </section>
+                  </div>
+                  <div class="carousel-item ">
+                    <section id="Careers">
+                        <div class="container">
+
+                           <div class="row">
+                                <div class="col-md-12">
+                                    <h1>Don’t hesitate to contact us</h1>
+                                </div>
+                            </div>
+                           <div class="row">
+                                <div class="col-md-6">
+                                    <h3>OFFICE ADDRESS</h3>
+                                    <p>5069 Megawra 5, El Mearag <br/> Cairo, Egypt</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <h3>Phone Number</h3>
+                                    <p>(+202) 25240440</p>
+
+                                </div>
+                            </div>
+                           <div class="row">
+                              <div class="col-md-6">
+                                  <h3>EMAIL ADDRESS</h3>
+                                  <p>info@Entasher.com</p>
+                              </div>
+                              <div class="col-md-6">
+                                  <h3>MOBILE NUMBER</h3>
+                                  <p>01113994443</p>
+                              </div>
+                            </div>
+                          <div class="row">
+                           <div class="col-md-12">
+                                  <h3>Follow us on social media</h3>
+                            </div>
+                          </div>
+                            <div class="social-container">
+                              <div class="row">
+                                  <div class="col-md-12">
+                                      <div class="social-icon">
+                                          <div class="icon">
+                                              <a href="https://www.facebook.com" title="twitter">
+                                                  <i class="fab fa-twitter"></i>
+                                              </a>
+                                          </div>
+                                          <div class="icon">
+                                              <a href="https://www.facebook.com" title="Facebook">
+                                                  <i class="fab fa-facebook-f"></i>
+                                              </a>
+                                          </div>
+                                          <div class="icon">
+                                              <a href="https://www.facebook.com" title="linkedin">
+                                                  <i class="fab fa-linkedin-in"></i>
+                                              </a>
+                                          </div>
+                                          <div class="icon">
+                                              <a href="https://www.facebook.com" title="instagram">
+                                                  <i class="fab fa-instagram"></i>
+                                              </a>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+
+                        </div>
+                    </section>
+                  </div>
+                  <div class="carousel-item active">
+                     <section id="contact">
+                        <div class="container">
+
+                           <div class="row">
+                                <div class="col-md-12">
+                                    <h1>Don’t hesitate to contact us</h1>
+                                </div>
+                            </div>
+                           <div class="row">
+                                <div class="col-md-6">
+                                    <h3>OFFICE ADDRESS</h3>
+                                    <p>5069 Megawra 5, El Mearag <br/> Cairo, Egypt</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <h3>Phone Number</h3>
+                                    <p>(+202) 25240440</p>
+
+                                </div>
+                            </div>
+                           <div class="row">
+                              <div class="col-md-6">
+                                  <h3>EMAIL ADDRESS</h3>
+                                  <p>info@Entasher.com</p>
+                              </div>
+                              <div class="col-md-6">
+                                  <h3>MOBILE NUMBER</h3>
+                                  <p>01113994443</p>
+                              </div>
+                            </div>
+                          <div class="row">
+                           <div class="col-md-12">
+                                  <h3>Follow us on social media</h3>
+                            </div>
+                          </div>
+                            <div class="social-container">
+                              <div class="row">
+                                  <div class="col-md-12">
+                                      <div class="social-icon">
+                                          <div class="icon">
+                                              <a href="https://www.facebook.com" title="twitter">
+                                                  <i class="fab fa-twitter"></i>
+                                              </a>
+                                          </div>
+                                          <div class="icon">
+                                              <a href="https://www.facebook.com" title="Facebook">
+                                                  <i class="fab fa-facebook-f"></i>
+                                              </a>
+                                          </div>
+                                          <div class="icon">
+                                              <a href="https://www.facebook.com" title="linkedin">
+                                                  <i class="fab fa-linkedin-in"></i>
+                                              </a>
+                                          </div>
+                                          <div class="icon">
+                                              <a href="https://www.facebook.com" title="instagram">
+                                                  <i class="fab fa-instagram"></i>
+                                              </a>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+
+                        </div>
+                      </section>
+                  </div>
+
+                  <div class="carousel-item ">
+                    <section id="faq">
+                        <div class="container">
+
+                           <div class="row">
+                                <div class="col-md-12">
+                                    <h1>Don’t hesitate to contact us</h1>
+                                </div>
+                            </div>
+                           <div class="row">
+                                <div class="col-md-6">
+                                    <h3>OFFICE ADDRESS</h3>
+                                    <p>5069 Megawra 5, El Mearag <br/> Cairo, Egypt</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <h3>Phone Number</h3>
+                                    <p>(+202) 25240440</p>
+
+                                </div>
+                            </div>
+                           <div class="row">
+                              <div class="col-md-6">
+                                  <h3>EMAIL ADDRESS</h3>
+                                  <p>info@Entasher.com</p>
+                              </div>
+                              <div class="col-md-6">
+                                  <h3>MOBILE NUMBER</h3>
+                                  <p>01113994443</p>
+                              </div>
+                            </div>
+                          <div class="row">
+                           <div class="col-md-12">
+                                  <h3>Follow us on social media</h3>
+                            </div>
+                          </div>
+                            <div class="social-container">
+                              <div class="row">
+                                  <div class="col-md-12">
+                                      <div class="social-icon">
+                                          <div class="icon">
+                                              <a href="https://www.facebook.com" title="twitter">
+                                                  <i class="fab fa-twitter"></i>
+                                              </a>
+                                          </div>
+                                          <div class="icon">
+                                              <a href="https://www.facebook.com" title="Facebook">
+                                                  <i class="fab fa-facebook-f"></i>
+                                              </a>
+                                          </div>
+                                          <div class="icon">
+                                              <a href="https://www.facebook.com" title="linkedin">
+                                                  <i class="fab fa-linkedin-in"></i>
+                                              </a>
+                                          </div>
+                                          <div class="icon">
+                                              <a href="https://www.facebook.com" title="instagram">
+                                                  <i class="fab fa-instagram"></i>
+                                              </a>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+
+                        </div>
+                    </section>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </section>
+    <!-- end slider -->
+
+    <!-- end-content -->
+
+
+    <!-- Footer -->
+    <section id="Main-Footer">
+        <div class="container">
+            <!-- links -->
+            <div class="links-container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="Footer-links">
+                            <p>Entasher</p>
+                            <ul>
+                                <li>
+                                    <a href="">About Us</a>
+                                </li>
+                                <li>
+                                    <a href="">Contact</a>
+                                </li>
+                                <li>
+                                    <a href="">Careers</a>
+                                </li>
+                                <li>
+                                    <a href="">Terms ans Service</a>
+                                </li>
+                                <li>
+                                    <a href="">Privacy Policy</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="Footer-links">
+                            <p>Support</p>
+                            <ul>
+                                <li>
+                                    <a href="">How it Works</a>
+                                </li>
+                                <li>
+                                    <a href="">Help & Support</a>
+                                </li>
+                                <li>
+                                    <a href="">FAQs</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="Footer-links">
+                            <p>For Client</p>
+                            <ul>
+                                <li>
+                                    <a href="">Profile</a>
+                                </li>
+                                <li>
+                                    <a href="">Send a Request</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="Footer-links">
+                            <p>For Agency</p>
+                            <ul>
+                                <li>
+                                    <a href="">Dashboard</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Social icon  -->
+            <div class="social-container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="social-icon">
+                            <div class="icon">
+                                <a href="https://www.facebook.com" title="twitter">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </div>
+                            <div class="icon">
+                                <a href="https://www.facebook.com" title="Facebook">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </div>
+                            <div class="icon">
+                                <a href="https://www.facebook.com" title="linkedin">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </div>
+                            <div class="icon">
+                                <a href="https://www.facebook.com" title="instagram">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- CopyRights -->
+            <div class="copyRights-container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="Footer-logo">
+                            <img src="https://picsum.photos/200/50" alt="Footer logo">
+                        </div>
+                        <div class="Copy-rights">
+                            <p>© Entasher Ltd. 2020</p>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End-Footer -->
+    
+    <script>
+        $('.carousel').carousel({
+             interval: false,
+        });
+
+        $('#slider-carsoul-parent li').on('click',function(){
+            $this = $(this)
+            $this.addClass('active').siblings().removeClass('active')
+        })
+    </script>
+</body> 
+</html>
