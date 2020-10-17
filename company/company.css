@@ -80,8 +80,7 @@ section#header {
     font-size: 30px;
 }
 /* end header */
-/* start slider */
-/* slider override style  */
+/* end about us */
 #main-content .container
 {
     max-width: 65%;
@@ -137,11 +136,41 @@ section#header {
 }
 #main-content .about-list-item ul li
 {
-    padding: 5px 0;
+    padding: 5px 0 10px 2rem;
+    position: relative;
+}
+#main-content .about-list-item ul li::after 
+{
+    position:absolute;
+    top: 5px;
+    left:0;
+    content:"\2022";
+    color:black;
+    font-size:18px;
 }
 #main-content .about-list-item ul li span
 {
     padding-right: 2rem;
+}
+#main-content .about .mission {
+    padding-top: .5rem;
+}
+#main-content .about .mission ,
+#main-content .about .vision ,
+#main-content .about .social-container
+
+{
+    text-align: left;
+}
+#main-content .about .mission h5 ,
+#main-content .about .vision h5 
+{
+    font-weight: bold;
+    font-size:18px
+}
+#main-content .about .social-container .social-icon
+{
+    justify-content: left;
 }
 #main-content .contact h1 ,
 #main-content .about h3
@@ -330,6 +359,11 @@ section#header {
     #main-content
     {
         padding: 1rem 0 !important;
+    }
+    #main-content .about .social-container ,
+    #main-content .about .social-container {
+        text-align: center;
+        justify-content: center;
     }
     #Main-Footer .links-container .col-md-4
     {
