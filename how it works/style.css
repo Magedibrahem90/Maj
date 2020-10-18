@@ -1,6 +1,14 @@
 * {
     box-sizing: border-box;
 }
+body {
+    opacity: 1;
+    transition: 3s opacity ease-in-out;
+}
+body.fade-out {
+    opacity: 0;
+    transition: none;
+}
 /* nav-bar */
 #Main-nav-bar #nav-bar-container
 {

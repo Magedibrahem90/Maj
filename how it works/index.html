@@ -14,13 +14,13 @@
     <link rel="stylesheet" href="./style.css">  <!-- style -->
     <title>Company</title>
 </head>
-<body>
+<body class="fade-out">
     <!-- Main nav-bar -->
     <section id="Main-nav-bar">
         <main>
             <nav class="navbar navbar-expand-lg navbar-light container" id="nav-bar-container">
                 <a class="navbar-brand" href="#">
-                    <img src="./nav-logo.png" alt="Footer logo">
+                    <img src="../company/nav-logo.png" alt="Footer logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
@@ -260,28 +260,30 @@
     </section>
     <!-- End-Footer -->
 
-    <script src="./company.js"></script> <!-- script -->
     <script>
         $('.carousel').carousel({
              interval: false,
         });
 
+        $(document).ready(function(){
+            $('body').removeClass('fade-out');
+            // Get the clicked Element
+            if (window.localStorage.getItem('item') == 0 ){
+                $('[data-slide-to="0"]').click()
+            }
+            else if (window.localStorage.getItem('item') == 1 ){
+                $('[data-slide-to="1"]').click()
+            }
+            else if (window.localStorage.getItem('item') == 2 ){
+                $('[data-slide-to="2"]').click()
+            }
+
+        })
         $('#slider-carsoul-parent li').on('click',function(){
             $this = $(this)
             $this.addClass('active').siblings().removeClass('active')
             window.localStorage.clear()
             window.localStorage.setItem('item',$this.attr('data-slide-to'))
-
-            if ($this.children().html() == 'agency'){
-                $('#header .header-title .page-title').text($this.text())
-            }
-            else if ($this.children().html() == 'client'){
-                $('#header .header-title .page-title').text($this.text())
-            }
-            else
-            {
-                $('#header .header-title .page-title').text($this.text())
-            }
         })
     </script>
 </body>
