@@ -200,6 +200,49 @@ section#header {
 {
     color: #121212;
 }
+/*clients  */
+.clients .container .row:first-of-type
+{
+    padding-top: 2rem ;
+}
+.clients .container .second-row-of-imageclientsbrand
+{
+    padding-top: 1rem ;
+}
+.clients .container .col-md-2 {
+    box-sizing: border-box;
+}
+/*  blog  */
+.blog .container .row:first-of-type 
+{
+    padding-top: 2rem ;
+    position: relative;
+}
+.blog .container .row .col-md-3 
+{
+    box-sizing: border-box;
+}
+.blog .container .second-row-of-blogimagebrand 
+{
+    padding-top: 1rem ;
+}
+.blog .container .col-md-3 .text-blog {
+    position: absolute;
+    top: 55%;
+    bottom: 0px;
+    right: 0;
+    left: 10%;
+    color: #FFFFFF;
+    text-align: left;
+}
+.blog .container .row img 
+{
+    border-radius: 7px;
+}
+.blog .container .col-md-3 .text-blog h3 {
+    font-size: unset;
+}
+
 /* End-content */
 /*``````````````````````````*/
 /* Main Footer  */
@@ -399,7 +442,22 @@ section#header {
     {
         height: 170px;
     }
-    .col-md-6 .item
+    /* .clients */
+    .clients .container .col-md-2
+    {
+        padding-bottom:1rem;
+        width: 50%;
+    }
+     /* end .clients */
+     /* blog */
+     .blog .container .col-md-3
+    {
+        padding-bottom:1rem;
+        width: 50%;
+    }
+     /* end blog */
+
+     .col-md-6 .item
     {
         padding: 0 ;
     }
