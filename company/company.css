@@ -139,7 +139,7 @@ section#header {
     padding: 5px 0 10px 2rem;
     position: relative;
 }
-#main-content .about-list-item ul li::after 
+#main-content .about-list-item ul li::after
 {
     position:absolute;
     top: 5px;
@@ -163,7 +163,7 @@ section#header {
     text-align: left;
 }
 #main-content .about .mission h5 ,
-#main-content .about .vision h5 
+#main-content .about .vision h5
 {
     font-weight: bold;
     font-size:18px
@@ -400,5 +400,13 @@ section#header {
     #Main-Footer .copyRights-container
     {
         width: 80%;
+    }
+}
+
+@media (min-width:767px) and (max-width:991px)
+{
+    .navbar-light .navbar-toggler
+    {
+        order: 1;
     }
 }

@@ -407,3 +407,10 @@ section#header {
         width: 80%;
     }
 }
+@media (min-width:767px) and (max-width:991px)
+{
+    .navbar-light .navbar-toggler
+    {
+        order: 1;
+    }
+}
