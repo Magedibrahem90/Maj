@@ -47,7 +47,6 @@
 /* end nav-bar */
 /*``````````````````````````*/
 /* Content  */
-
 /* header */
 section#header {
     background-color: #3671C7;
@@ -389,7 +388,6 @@ section#header {
     #Main-nav-bar #nav-bar-container #send-req-btn br {
     display:none;
     }
-
 }
 @media (min-width:1920px) {
     #Main-Footer .links-container,

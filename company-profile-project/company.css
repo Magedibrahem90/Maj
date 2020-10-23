@@ -242,7 +242,6 @@ section#header {
 .blog .container .col-md-3 .text-blog h3 {
     font-size: unset;
 }
-
 /* End-content */
 /*``````````````````````````*/
 /* Main Footer  */
@@ -338,7 +337,6 @@ section#header {
     {
         padding-bottom: 0 !important;
     }
-
     .header-container .header-title h1
     {
         font-size: 20px;
@@ -456,7 +454,6 @@ section#header {
         width: 50%;
     }
      /* end blog */
-
      .col-md-6 .item
     {
         padding: 0 ;
@@ -509,7 +506,6 @@ section#header {
     #Main-nav-bar #nav-bar-container #send-req-btn br {
     display:none;
     }
-
 }
 @media (min-width:1920px) {
     #Main-Footer .links-container,
