@@ -213,16 +213,16 @@ section#header {
     box-sizing: border-box;
 }
 /*  blog  */
-.blog .container .row:first-of-type 
+.blog .container .row:first-of-type
 {
     padding-top: 2rem ;
     position: relative;
 }
-.blog .container .row .col-md-3 
+.blog .container .row .col-md-3
 {
     box-sizing: border-box;
 }
-.blog .container .second-row-of-blogimagebrand 
+.blog .container .second-row-of-blogimagebrand
 {
     padding-top: 1rem ;
 }
@@ -235,9 +235,9 @@ section#header {
     color: #FFFFFF;
     text-align: left;
 }
-.blog .container .row img 
+.blog .container .row img
 {
-    border-radius: 7px;
+    /* border-radius: 7px; */
 }
 .blog .container .col-md-3 .text-blog h3 {
     font-size: unset;
