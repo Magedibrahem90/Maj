@@ -1,0 +1,221 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    opacity: 1;
+    transition: 3s opacity ease-in-out;
+}
+body.fade-out {
+    opacity: 0;
+    transition: none;
+}
+/* nav-bar */
+#Main-nav-bar #nav-bar-container
+{
+    background-color: #fff;
+}
+#Main-nav-bar #nav-form button
+{
+    border-radius: 0 ;
+    background-color: #3671C7;
+}
+#Main-nav-bar #nav-form input
+{
+    background-color: #FAFAFA;
+    border: 1px solid #D5D5D5;
+    border-radius: 0;
+}
+#Main-nav-bar #nav-bar-container #pro
+{
+    color:#FBB03B;
+    font-weight: 600;
+}
+#Main-nav-bar #nav-bar-container .nav-link
+{
+    color: #121212;
+    font-weight: 600;
+    font-size: 14px;
+}
+#Main-nav-bar #nav-bar-container .dropdown-toggle::after {
+    color: #3671C7;
+}
+#Main-nav-bar #nav-bar-container #send-req-btn {
+    padding: 5px 12px;
+    border: 1px solid #3671C7;
+    border-radius: 0;
+    color: #3671C7;
+    line-height: 16px;
+    border-radius: 2px;
+}
+#Main-nav-bar #nav-bar-container #send-req-btn:hover
+{
+    color:#FFF;
+    background-color: #3671C7;
+}
+/* end nav-bar */
+/*``````````````````````````*/
+/* Content  */
+
+/* header */
+section#header {
+    background-color: #3671C7;
+    height: 371px;
+    width: auto;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+ .header-container .header-title{
+     color: #FFFFFF;
+}
+.header-container .header-title h2{
+    font-size: 50px;
+    text-shadow: 0px 1px, 1px 0px, 1px 1px;
+}
+.header-container .header-title span.asterisk
+{
+    color:#FBB03B
+}
+.header-container .header-title p{
+    font-size: 30px;
+}
+/* end header */
+/* end about us */
+/* End-content */
+/*``````````````````````````*/
+/* Main Footer  */
+#Main-Footer
+{
+    border-top: 2px solid #b2b2b2;
+}
+#Main-Footer .links-container ,
+#Main-Footer .social-container ,
+#Main-Footer .copyRights-container
+{
+    width: 65%;
+    margin:auto;
+    padding: 1.5rem 0;
+}
+#Main-Footer .copyRights-container
+{
+    border-top: 1px solid #b2b2b2;
+}
+#Main-Footer .Footer-logo ,
+#Main-Footer .social-icon ,
+#Main-Footer .Copy-rights
+{
+    color: #B2B2B2;
+    display: block;
+    text-align: center;
+}
+#Main-Footer .Footer-links ul ,
+#Main-Footer .company-footer-links ul
+{
+    padding: 0;
+    list-style-type: none;
+}
+#Main-Footer .Footer-links ul li ,
+#Main-Footer .company-footer-links ul li
+{
+    padding: 2px 0;
+}
+#Main-Footer .Footer-links ul li a ,
+#Main-Footer .company-footer-links ul li a
+{
+    color:#5C5C5C;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: 600;
+}
+#Main-Footer .Footer-links p ,
+#Main-Footer .company-footer-links p
+{
+    color:#3671C7;
+    margin-bottom: .5rem;
+    font-weight: bold;
+}
+#Main-Footer .social-icon {
+    display: flex;
+    justify-content: center;
+}
+#Main-Footer .social-icon > div
+{
+    padding: 1rem;
+}
+#Main-Footer .social-icon a
+{
+    color:#5C5C5C ;
+}
+#Main-Footer .Copy-righPrivacy
+{
+    font-size: 14px;
+    padding-top:0.25rem;
+}
+/* Footer end */
+
+@media (min-width:320px) and (max-width:767px){
+    /* Nav */
+    #Main-nav-bar #nav-form
+    {
+        width: 100%;
+        margin: 0 !important;
+    }
+    #Main-nav-bar #nav-form input
+    {
+        flex: 1;
+    }
+    #Main-nav-bar .navbar-light .navbar-toggler{
+        border:none;
+        color: #212121;
+    }
+    /* content */
+    #Main-nav-bar #nav-bar-container
+    {
+        padding-bottom: 0 !important;
+    }
+    section#header
+    {
+        height: 200px;
+        margin: 0 1rem;
+    }
+    .header-container .header-title h2
+    {
+        font-size: 28px;
+    }
+    .header-container .header-title p
+    {
+        font-size: 18px;
+    }
+    /* Footer */
+    #Main-Footer .links-container,
+    #Main-Footer .social-container,
+    #Main-Footer .copyRights-container
+    {
+        width: 90%;
+    }
+    #Main-Footer .social-container
+    {
+        padding: 0;
+    }
+    #Main-Footer .links-container {
+        padding-bottom: 0;
+    }
+    #Main-nav-bar #nav-bar-container #send-req-btn
+    {
+        margin-bottom:.5rem;
+        width:100%;
+        padding:.75rem;
+    }
+    #Main-nav-bar #nav-bar-container #send-req-btn br {
+    display:none;
+    }
+
+}
+@media (min-width:1920px) {
+    #Main-Footer .links-container,
+    #Main-Footer .social-container,
+    #Main-Footer .copyRights-container
+    {
+        width: 80%;
+    }
+}
