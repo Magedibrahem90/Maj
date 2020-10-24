@@ -46,19 +46,17 @@
 }
 /* end nav-bar */
 /*``````````````````````````*/
-/* Content  */
-
 /* header */
 section#header {
     background-color: #3671C7;
-    height: 371px;
+    height: 300px;
     width: auto;
     display: flex;
     text-align: center;
     align-items: center;
 }
- .header-container .header-title{
-     color: #FFFFFF;
+.header-container .header-title{
+    color: #FFFFFF;
 }
 .header-container .header-title h2{
     font-size: 50px;
@@ -73,8 +71,121 @@ section#header {
     font-size: 30px;
 }
 /* end header */
-/* end about us */
-
+#main-content
+{
+    padding: 2rem 0;
+}
+#main-content .container
+{
+    max-width: 75%;
+}
+#main-content .title h2
+{
+    font-weight: bold;
+    padding: 1rem 0;
+}
+#main-content #main-banner
+{
+    background-color: #F2F2F2;
+    align-items: center;
+    padding: 2rem 1rem;
+}
+#main-content #main-banner .announcement-img img
+{
+    width: 100%;
+}
+#main-content #main-banner .content
+{
+    color: #212121;
+}
+#main-content #main-banner .content .description-header h4
+{
+    font-weight: bold;
+    color: #3671C7;
+}
+#main-content #main-banner .content .description-header p
+{
+    margin: 0;
+    font-size: 18px;
+}
+#main-content #main-banner .content .description-content h6
+{
+    font-weight: 600;
+}
+#main-content #main-banner .content .description-content .agency-logo
+{
+    max-width: 150px;
+    max-height: 150px;
+    margin-left: auto;
+}
+#main-content #main-banner .content .description-content .agency-logo img
+{
+    width: 100%;
+    height: 100%;
+}
+#main-content #main-banner .content .description-content .row
+{
+    padding-top: 1.5rem;
+}
+#main-content #main-banner .content .description-content .row:last-child
+{
+    align-items: flex-end;
+}
+#main-content #main-banner .content .description-content .row.main
+{
+    padding-top: 0;
+}
+#main-content #main-banner .content .description-content .row .content-item
+{
+    display: flex;
+    flex-direction: column;
+}
+#main-content #main-banner .content .description-content .row .content-item p
+{
+    margin-bottom: 0;
+}
+#main-content .Book-now-container
+{
+    background-color: #F2F2F2;
+    border-top: 2px solid silver;
+    padding: 2rem 1.75rem;
+}
+#main-content .Book-now-container .book-now
+{
+    text-align: right;
+}
+#main-content .Book-now-container .book-now a
+{
+    padding: 10px 50px;
+    border-radius: 2px;
+    background-color: #3671C7;
+    font-weight: 600;
+    border: none;
+}
+#main-content .middle-banner
+{
+    padding: 1.5rem 0;
+}
+#main-content .middle-banner img
+{
+    width: 100%;
+}
+#main-content .item-container
+{
+    display: flex;
+    justify-content: space-between;
+}
+#main-content .item-container .item
+{
+    width: 20%;
+    max-width: 20%;
+    max-height: 200px;
+    padding: 5px;
+}
+.col-md-12
+{
+    padding: 0;
+}
 /* End-content */
 /*``````````````````````````*/
 /* Main Footer  */
@@ -147,7 +258,7 @@ section#header {
 }
 /* Footer end */
 
-@media (min-width:320px) and (max-width:767px){
+@media (min-width:320px) and (max-width:768px){
     /* Nav */
     #Main-nav-bar #nav-form
     {
@@ -162,6 +273,7 @@ section#header {
         border:none;
         color: #212121;
     }
+
     /* content */
     #Main-nav-bar #nav-bar-container
     {
@@ -170,54 +282,72 @@ section#header {
     section#header
     {
         height: 200px;
-        margin: 0 1rem;
     }
     .header-container .header-title h2
     {
-        font-size: 28px;
+        font-size: 24px;
     }
     .header-container .header-title p
     {
         font-size: 18px;
     }
-    #slider-carsoul-parent
-    {
-        margin: 0 !important;
-        justify-content: space-around;
-    }
-    #slider-carsoul-parent li
-    {
-        padding: 3px;
-        font-size: 14px;
-    }
+
     #main-content .container
     {
         max-width: unset;
-    }
-    #main-content .contact h1
-    {
-        padding: 20px;
-        font-size: 22px;
-    }
-    #main-content .contact .item
-    {
-        padding-bottom: .5rem;
     }
     .col-md-6
     {
         width: 50%;
     }
-    .col-md-6 .item
+    #main-content .title h2
     {
-        padding: 0 ;
+        padding: 0 1rem;
     }
-    #main-content .contact h3 ,
+    #main-content #main-banner
+    {
+        flex-direction: column;
+        padding-bottom: .5rem;
+    }
+    #main-content #main-banner .content
+    {
+        padding-bottom: 1rem;
+    }
+    #main-content #main-banner  .col-md-4 ,
+    #main-content #main-banner  .col-md-8
+    {
+        max-width: 100%;
+    }
+    #main-content #main-banner .content .description-content .agency-logo
+    {
+        padding-top: 1rem;
+    }
+    #main-content .Book-now-container
+    {
+        padding: 1rem;
+    }
+    #main-content .Book-now-container .book-now a
+    {
+        width: 100%;
+    }
+    #main-content .item-container
+    {
+        flex-direction: column;
+    }
+    #main-content .item-container .item
+    {
+        width: 85%;
+        box-sizing: border-box;
+        max-width: 85%;
+        margin: auto;
+        text-align:center;
+        max-height: unset;
+    }
     #Main-Footer .Footer-links p ,
     #Main-Footer .company-footer-links p
     {
         font-size: 14px;
     }
-    .contact p ,
     #Main-Footer .Footer-links ul li a ,
     #Main-Footer .company-footer-links ul li a
     {
@@ -269,11 +399,8 @@ section#header {
         width: 80%;
     }
 }
-
-@media (min-width:767px) and (max-width:991px)
-{
-    .navbar-light .navbar-toggler
-    {
-        order: 1;
+@media (min-width:769px) and (max-width:1200px){
+    #main-content .container {
+        max-width: unset;
     }
 }
