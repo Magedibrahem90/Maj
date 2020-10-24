@@ -132,7 +132,7 @@ section#header {
 }
 #main-content .container
 {
-    max-width: 75%;
+    max-width: 80%;
 }
 #slider-carsoul-parent
 {
@@ -198,58 +198,69 @@ section#header {
 }
 /*billboards  */
 .billboards .container {
-    
+
     margin-top: 2rem;
     text-align: left;
 }
 .billboards .container .row {
     background-color: #F0F0F0;
-    margin: .50rem  0;
+    padding: 0.75rem;
 }
-.billboards .container .row .col-md-7 {
+.billboards .container .row .info-company {
     padding: 0;
 }
 .billboards .container .info-company h5{
-    font-size: 1rem;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0;
 }
 .billboards .container .info-company p{
-    font-size: 12px;
+    font-size: 14px;
+    margin: 0;
 }
 .billboards .container .info-company h5 ,
 .billboards .container .info-company p{
     color: #121212;
 }
-.billboards .container .info-company img{
-    width: 130px;
-    height: 105px;
+.billboards .second-row .start-date-showmedia
+{
+    display: none;
 }
-    .billboards .second-row .start-date-showmedia 
-    {
-        display: none;
-    }
-    .billboards-buttons
-    {
-        text-align: end;
-        margin-top: 1.8rem;
-    }
-    .billboards-buttons a button.blue ,
-    .billboards-buttons a button.warning
-    {
-        padding: 1rem 1.5rem;
-        border-radius: 0;
-        color: #fff;
-        line-height: 16px;
-        border-radius: 2px;
-        cursor: pointer;
-        width: 70%;
-        background-color: #3671C7;
-        margin-top: 10px;
-    }
-    .billboards-buttons a button.warning
-    {
-        background-color:#F0F0F0;
-        color: #FBB03B;
-    }
+.right-btn
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.billboards-buttons div
+{
+    margin-top: 1rem;
+}
+.billboards-buttons div a
+{
+    width: 100%;
+    display: block;
+    padding: 10px 0;
+    border-radius: 2px;
+}
+.billboards-buttons a button.blue ,
+.billboards-buttons a button.warning
+{
+    padding: 1rem 1.5rem;
+    border-radius: 0;
+    color: #fff;
+    line-height: 16px;
+    border-radius: 2px;
+    cursor: pointer;
+    width: 70%;
+    background-color: #3671C7;
+    margin-top: 10px;
+}
+.billboards-buttons a button.warning
+{
+    background-color:#F0F0F0;
+    color: #FBB03B;
+}
 /* End-content */
 /*``````````````````````````*/
 /* Main Footer  */
@@ -372,9 +383,14 @@ section#header {
     {
         color: gray;
     }
+    .billboards .container .row
+    {
+        padding: 1rem;
+    }
     #main-content .container
     {
-        max-width: unset;
+        max-width: 95%;
+        padding: 0;
     }
     #main-content .contact h1
     {
@@ -395,7 +411,7 @@ section#header {
     }
     .myprojects .container .col-md-4 img
     {
-    
+
         height: 170px;
     }
     /* .billboards */
@@ -410,27 +426,27 @@ section#header {
      {
         width: 50%;
     }
-    .billboards .info-company .row h5 
+    .billboards .info-company .row h5
     {
         font-size: .80rem;
     }
-    .billboards .info-company  
+    .billboards .info-company
     {
         font-size: .80rem;
     }
-    .billboards .second-row .start-date-hiddenmedia 
+    .billboards .second-row .start-date-hiddenmedia
     {
         display: none;
     }
-    .billboards .second-row .start-date-showmedia 
+    .billboards .second-row .start-date-showmedia
     {
         display: block;
     }
-    .billboards .second-row  .col-md-4 
+    .billboards .second-row  .col-md-4
     {
         display: flex;
         justify-content: space-between;
-        padding-top: 1rem;   
+        padding-top: 1rem;
     }
     .billboards .info-company .row h5 {
         font-size: 0.78rem;
@@ -441,9 +457,14 @@ section#header {
         margin-top: 0;
         text-align: center;
         padding: 1rem 0;
-        display: flex;
-        padding-top: 0;
-        flex-direction: row-reverse;
+    }
+    .billboards .container .row .info-company .col-md-6
+    {
+        max-width: 33.333%;
+    }
+    .end-date
+    {
+        padding-top: 0 !important;
     }
     .billboards-buttons a{
         width: 50%;
@@ -496,6 +517,10 @@ section#header {
     {
         width: 33%;
     }
+    .flex-row
+    {
+        flex-direction: column;
+    }
     /* Footer */
     #Main-Footer .links-container,
     #Main-Footer .social-container,
@@ -527,5 +552,12 @@ section#header {
     #Main-Footer .copyRights-container
     {
         width: 80%;
+    }
+}
+@media (min-width:767px) and (max-width:991px)
+{
+    .navbar-light .navbar-toggler
+    {
+        order: 1;
     }
 }
