@@ -120,8 +120,6 @@ section#header {
 }
 #company-avatar-desc .text-brand
 {
-    max-width: 65%;
-    display: inline-block;
     padding-bottom: 1.5rem;
 }
 #company-avatar-desc a
@@ -166,9 +164,13 @@ section#header {
     text-align: center;
 }
 /* project  */
-.myprojects .container .row:first-of-type
+.myprojects .container
 {
-    padding-top: 2rem ;
+    padding: 1.5rem 0;
+}
+.myprojects .container .row
+{
+    padding: 1rem 10px;
 }
 .myprojects .container .col-md-4
 {
