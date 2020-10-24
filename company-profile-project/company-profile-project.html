@@ -85,27 +85,29 @@
     <!-- end header -->
     <!-- company avatar desc-->
     <section id="company-avatar-desc">
-        <div class="coontainer">
-            <div class="col-md-12">
-                <h1>Ooh my brand</h1>
-                <div class="text-brand">
-                  <p>Opening Ooh my brand! doors and having success stories emerge from project one proves that our equation is balanced. We think, we execute, we build, and most importantly we believe. A brief is a necessity, but walking a mile in someone’s shoes brings real possibilities forward, 
-                    and a real branding partner gives you more than one angle to work with.</p>
-                 <p>Everyone involved in the Ooh my brand! process is a “believer” because partners trust us and we believe in their power to sustain the identities we push forward together. Our associates, in-house and outsourced, 
-                    operate with a unified vision, and the end result always stands out.</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Ooh my brand</h1>
+                    <div class="text-brand">
+                      <p>Opening Ooh my brand! doors and having success stories emerge from project one proves that our equation is balanced. We think, we execute, we build, and most importantly we believe. A brief is a necessity, but walking a mile in someone’s shoes brings real possibilities forward,
+                        and a real branding partner gives you more than one angle to work with.</p>
+                     <p>Everyone involved in the Ooh my brand! process is a “believer” because partners trust us and we believe in their power to sustain the identities we push forward together. Our associates, in-house and outsourced,
+                        operate with a unified vision, and the end result always stands out.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-12">
-                <div class="company-links">
-                    <a href="" class="Company_contact_info">Company contact info
-                        <i class="fas fa-chevron-right"></i>
-                    </a>
-                    <a href="" class="Request_service_quotation">Request service quotation
-                        <i class="fas fa-chevron-right"></i>
-                    </a>
-                    <a href="" class="Download_company_profile">Download company profile
-                        <i class="fas fa-download"></i>
-                    </a>
+                <div class="col-md-12">
+                    <div class="company-links">
+                        <a href="" class="Company_contact_info">Company contact info
+                            <i class="fas fa-chevron-right"></i>
+                        </a>
+                        <a href="" class="Request_service_quotation">Request service quotation
+                            <i class="fas fa-chevron-right"></i>
+                        </a>
+                        <a href="" class="Download_company_profile">Download company profile
+                            <i class="fas fa-download"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -423,28 +425,5 @@
             </div>
         </div>
     </section>
-    <script>
-        $('.carousel').carousel({
-             interval: false,
-        });
-
-        $('#slider-carsoul-parent li').on('click',function(){
-            $this = $(this)
-            $this.addClass('active').siblings().removeClass('active')
-            window.localStorage.clear()
-            window.localStorage.setItem('item',$this.attr('data-slide-to'))
-
-            if ($this.children().html() == 'Contact'){
-                $('#header .header-title .page-title').text($this.text()+' us')
-            }
-            else if ($this.children().html() == 'projects'){
-                $('#header .header-title .page-title').text($this.text()+' us')
-            }
-            else
-            {
-                $('#header .header-title .page-title').text($this.text())
-            }
-        })
-    </script>
 </body>
 </html>

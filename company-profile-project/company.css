@@ -114,6 +114,10 @@ section#header {
     text-align: center;
     color: #121212;
 }
+#company-avatar-desc .container
+{
+    max-width: 75%;
+}
 #company-avatar-desc h1
 {
     font-weight: bold;
@@ -124,7 +128,6 @@ section#header {
 }
 #company-avatar-desc .text-brand
 {
-    max-width: 65%;
     display: inline-block;
     padding-bottom: 1.5rem;
 }
@@ -348,6 +351,10 @@ section#header {
     .header-container .header-title p
     {
         font-size: 18px;
+    }
+    #company-avatar-desc .container
+    {
+        max-width: 95%;
     }
     #slider-carsoul-parent
     {
