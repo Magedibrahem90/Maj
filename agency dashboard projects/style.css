@@ -196,6 +196,9 @@ body
     cursor: pointer;
     font-size: 14px;
 }
+#request-content .col-md-6{
+    max-width: 360px;
+}
 .profile-cart .title h4
 {
     font-size: 22px;
@@ -240,36 +243,6 @@ body
     width: 250px;
 }
 /* btn container  */
-#request-content
-{
-    background-color: #F0F0F0;
-    border-radius: 2px;
-    margin-bottom: 5px;
-    margin-right: 0;
-}
-#request-content div.lable
-{
-    padding-left: 0;
-    padding-right: 0;
-    max-width: 20px;
-    width: 5%;
-    background-color: #FBB03B;
-}
-#request-content div.lable.blue,
-.btn-primary
-{
-    background-color: #3671C7;
-}
-#request-content div.col-md-10
-{
-    max-width: 95%;
-    flex: unset;
-    padding-right: 0;
-}
-#request-content .request-info-container .request-item h6 {
-    font-weight: 600;
-    margin: 0;
-}
 #content .btn-container button
 {
     border-radius: 2px;
@@ -486,15 +459,6 @@ body
         border-bottom: 0;
     }
     /* content  */
-    #request-content div.col-md-10 .row
-    {
-        flex-direction: column;
-    }
-    #request-content div.col-md-10 .row.py-3 .col-md-4 ,
-    #request-content div.col-md-10 .row.py-3 .col-md-8
-    {
-        max-width: 100%;
-    }
     .request-info-container .row
     {
         flex-direction: column;
@@ -503,13 +467,6 @@ body
     {
         flex-direction: row !important;
         flex-wrap: wrap;
-    }
-    #request-content .request-info-container .request-item
-    {
-        max-width: 50% !important;
-        width: 50% !important;
-        flex: unset;
-        padding: 0 1.5rem !important;
     }
     #profile-content
     {
