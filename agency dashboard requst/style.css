@@ -58,7 +58,7 @@ body
 /* Content  */
 
 /* header */
-section#header {
+.lg-screen-header {
     background-color: #132FBF;
     height: 300px;
     width: auto;
@@ -181,6 +181,7 @@ section#header {
 #filter .sort-btn
 {
     max-width: 180px;
+    margin: 0 5px;
 }
 #filter .sort-btn p
 {
@@ -195,7 +196,6 @@ section#header {
     cursor: pointer;
     font-size: 14px;
 }
-
 .profile-cart .title h4
 {
     font-size: 22px;
@@ -351,6 +351,10 @@ section#header {
     padding-top:0.25rem;
 }
 /* Footer end */
+.sm-screen-header
+{
+    display: none ;
+}
 
 @media (min-width:320px) and (max-width:767px){
     /* Nav */
@@ -410,6 +414,55 @@ section#header {
 }
 @media(max-width:970px){
 
+    /* avatar */
+    .sm-screen-header
+    {
+        display: block;
+    }
+    .lg-screen-header{
+        height: unset;
+        background-color: unset;
+    }
+    section.lg-screen-header
+    {
+        display: none !important;
+    }
+    .sm-screen-header .profile-container
+    {
+        position: unset !important;
+    }
+    .sm-screen-header .Change-Coverl
+    {
+        right: 0;
+        bottom: 0;
+    }
+    .sm-screen-header .profile-container
+    {
+        max-width: 100%;
+        flex: unset;
+    }
+    .sm-screen-header .profile-cart .avatar
+    {
+        position: absolute;
+        top: 50px;
+        left: 0;
+        right: 0;
+    }
+    .sm-screen-header .profile-cart .header-row
+    {
+        background-color: red;
+        height: 200px;
+        margin-bottom: 1rem;
+        position: relative;
+    }
+    .profile-cart
+    {
+        padding: 0;
+    }
+    .profile-cart .row {
+        padding: 1rem ;
+    }
+    /* End */
     #filter
     {
         flex-direction: column;
@@ -467,5 +520,41 @@ section#header {
         flex: unset;
         max-width: 100%;
         width: 100%;
+    }
+    .profile-cart .row.num .col-md-6
+    {
+        max-width: 50%;
+    }
+    .profile-cart .num h6{
+        font-size: 12px;
+    }
+}
+@media(max-width:600px){
+    .profile-cart .avatar img
+    {
+        width: 150px;
+        height: 150px;
+    }
+    .Change-Cover button{
+        font-size: 14px;
+    }
+    .sm-screen-header .profile-cart .avatar{
+        top: 85px;
+    }
+}
+@media(max-width:480px){
+    .Change-Cover button
+    {
+        margin: 3px;
+    }
+    .profile-cart .avatar img{
+        width: 120px;
+        height: 120px;
+    }
+    .sm-screen-header .profile-cart .avatar{
+        top: 125px;
+    }
+    .Change-Cover{
+        top: 0;
     }
 }
