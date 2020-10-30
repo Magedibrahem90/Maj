@@ -197,6 +197,10 @@ body
     cursor: pointer;
     font-size: 14px;
 }
+.btn-link
+{
+    text-decoration: none !important;
+}
 #request-content
 {
     min-height: 600px;
