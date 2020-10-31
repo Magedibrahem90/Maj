@@ -11,7 +11,142 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <!-- Font awsome  -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="./style.css">
+    <style>
+      .modal-header
+      {
+          border-bottom: unset;
+          padding-top: 2rem;
+          padding-bottom: 0;
+      }
+      .modal-body 
+      {
+        padding:0 1rem 1rem;
+      }
+      .modal-title 
+      {
+        font-weight: 600;
+        columns: #212121;
+        margin: auto;
+      }
+      form{
+        padding: 1.5rem 0 0;
+      }
+      .modal-body input {
+        border-radius: 2px;
+        color: #eeeeee;
+        padding: 1rem;
+        height: 45px;
+      }
+      .modal-body button {
+        border-radius: 0;
+        padding: 10px 20px;
+        margin-top: .25rem;
+      }
+      .modal-body .divider
+      {
+        margin: 1.5rem 0;
+      }
+      .modal-body .divider p 
+      {
+        text-align: center;
+        position:relative;
+        font-weight: 600;
+        font-size: 14px;
+      }
+      .modal-body .divider p::after
+      {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        content: "";
+        width: 45%;
+        height: 1px;
+        background-color: #e8e5e5;
+      }
+      .modal-body .divider p::before
+      {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        content: "";
+        width: 45%;
+        height: 1px;
+        background-color: #e8e5e5;
+      }
+      .modal-body button.btn-light 
+      {
+        width: 100%;
+        border: 1px solid;
+        color: #5C5C5C;
+        background-color: transparent;
+        font-size: 20px;
+      }
+      .modal-body button.btn-light:focus
+      {
+        box-shadow: none;
+      }
+      .have-account
+      {
+        padding: 1rem 0;
+        text-align: center;
+        border-top: 1px solid #eeeeee;
+        margin-top: 1rem;
+      }
+      .have-account p 
+      {
+        color: #121212;
+      }
+      .have-account a 
+      {
+        text-decoration: none;
+        color: #3671C7;
+      }
+    </style>
 </head>
-
+<body>
+    <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary " data-toggle="modal" data-target="#exampleModalCenter">
+    Sign up Email
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">
+            Create an account on Entasher
+          </h5>
+        </div>
+        <div class="modal-body">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <form action="" method="post">
+                  <div class="form-group">
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+                  </div>
+                  <button type="submit" class="btn btn-primary w-100">Continue</button>
+                </form>
+                <div class="divider">
+                  <p>OR</p>
+                </div>
+                <button class="btn btn-light">
+                  <i class="fab fa-google"></i>
+                  Continue with Google
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="have-account">
+          <p>Already have an account?
+            <a href="">
+              Login to your account
+            </a>
+          </p>
+        </div>
+    </div>
+  </div>
+</body>
 </html>
