@@ -14,7 +14,6 @@ body
 #Main-nav-bar #nav-bar-container
 {
     background-color: #fff;
-    max-width: 1070px;
 }
 #Main-nav-bar #nav-form button
 {
@@ -178,6 +177,16 @@ body
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
+#filter button
+{
+    padding: 7px 20px;
+    border-radius: 2px;
+    font-size: 14px;
+    margin: 0 5px;
+}
+#filter button:focus{
+    box-shadow: none;
+}
 #filter .col-md-6
 {
     padding: 0;
@@ -232,13 +241,13 @@ body
 }
 .profile-cart .title h4
 {
-    font-size: 22px;
+    font-size: 30px;
     font-weight: 600;
     text-align: center;
 }
 .profile-cart .title p
 {
-    font-size: 14px;
+    font-size: 18px;
     margin-bottom: 5px;
     text-align: center;
 }
@@ -246,10 +255,12 @@ body
 {
     font-weight: 600;
     font-size: 16px;
+    text-align: left;
 }
 .profile-cart .about p
 {
-    font-size: 13px;
+    font-size: 14px;
+    text-align: left;
 }
 .profile-cart .num > div:last-of-type h6 {
     text-align: end;
