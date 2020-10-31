@@ -14,6 +14,7 @@ body
 #Main-nav-bar #nav-bar-container
 {
     background-color: #fff;
+    max-width: 1070px;
 }
 #Main-nav-bar #nav-form button
 {
@@ -53,10 +54,36 @@ body
     color:#FFF;
     background-color: #3671C7;
 }
+#navbarDropdown img 
+{
+    border-radius: 50%;
+}
+#Main-nav-bar ul 
+{
+   align-items: center;
+}
+#Main-nav-bar ul li a i 
+{
+   color:#5C5C5C ; 
+   font-size: 20px;
+}
+#Main-nav-bar ul li  .nav-link.bell ,
+#Main-nav-bar ul li  .nav-link.question
+{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+#Main-nav-bar ul li  .nav-link.question
+{
+    border-right: solid 1px #B2B2B2;
+}
+#Main-nav-bar ul li  .nav-link.bell 
+{
+    border-left: solid 1px #B2B2B2;
+}
 /* end nav-bar */
 /*``````````````````````````*/
 /* Content  */
-
 /* header */
 .lg-screen-header {
     background-color: #132FBF;
@@ -509,5 +536,18 @@ body
     }
     .Change-Cover{
         top: 0;
+    }
+}
+/* navbar */
+@media (max-width:991px) {
+    #Main-nav-bar ul 
+    {
+        align-items: flex-start;
+    }
+    #Main-nav-bar ul li .nav-link.bell ,
+    #Main-nav-bar #nav-bar-container .nav-link
+    {
+        padding: .5rem;
+        border:none;
     }
 }
