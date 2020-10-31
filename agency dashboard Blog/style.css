@@ -539,6 +539,7 @@ body
         top: 0;
     }
 }
+/* navbar */
 @media (max-width:991px) {
     #Main-nav-bar ul 
     {
