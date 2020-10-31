@@ -15,6 +15,10 @@ body
 {
     background-color: #fff;
 }
+#Main-nav-bar #nav-bar-container .dropdown-toggle::after
+{
+    display: none;
+}
 #Main-nav-bar #nav-form button
 {
     border-radius: 0 ;
