@@ -224,10 +224,12 @@ body
 {
     font-weight: 600;
     font-size: 16px;
+    text-align: left;
 }
 .profile-cart .about p
 {
     font-size: 13px;
+    text-align: left;
 }
 .profile-cart .num > div:last-of-type h6 {
     text-align: end;
@@ -257,6 +259,73 @@ body
     border-radius: 2px;
     margin: 1px 0;
     padding: 10px;
+}
+/* accordion */
+.card
+{
+    margin-bottom: 5px;
+    border-radius: 0;
+}
+.card-header button.collapsed
+{
+    color: #212121;
+}
+.card-header button
+{
+    color: #3671C7;
+    font-weight: bold;
+    width: 100%;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card-header button:hover
+{
+    color: #3671C7;
+}
+.card-header button.collapsed:hover
+{
+    color: #212121;
+}
+.card-header button:focus
+{
+    box-shadow: none;
+}
+.card-body
+{
+    background-color: #f7f7f7;
+}
+.card-body button
+{
+    border: none;
+    color: #3671C7;
+    background-color: transparent;
+    outline: none;
+}
+.card-header-white
+{
+    background-color: #fff !important;
+}
+#btn-container
+{
+    margin-left: auto;
+    border-top: 2px solid #eee;
+    padding-top: 1rem;
+    margin-top: 1rem;
+}
+#btn-container .col-md-12
+{
+    display: flex;
+    flex-direction: row-reverse;
+}
+#btn-container button
+{
+    background-color: #3671C7;
+    color: #fff;
+    border-radius: 0;
+    min-width: 140px;
+    padding: 10px 20px;
 }
 /* End-content */
 /*``````````````````````````*/
