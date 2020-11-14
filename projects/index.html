@@ -11,10 +11,13 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <!-- Font awsome  -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <!-- owel -->
+    <link rel="stylesheet" href="../owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="../owl/owl.theme.default.css">
+    <script src="../owl/owl.carousel.min.js"></script>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-
     <!-- Main nav-bar -->
     <section id="Main-nav-bar">
         <main>
@@ -114,6 +117,33 @@
                                         <option value="2">Popular Projects</option>
                                         <option value="3">Popular Projects</option>
                                     </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="owl-carousel owl-theme">
+                                    <div class="item">
+                                        <img src="./item.png" alt="">
+                                    </div>
+                                    <div class="item">
+                                        <img src="./item.png" alt="">
+                                    </div>
+                                    <div class="item">
+                                        <img src="./item.png" alt="">
+                                    </div>
+                                    <div class="item">
+                                        <img src="./item.png" alt="">
+                                    </div>
+                                    <div class="item">
+                                        <img src="./item.png" alt="">
+                                    </div>
+                                    <div class="item">
+                                        <img src="./item.png" alt="">
+                                    </div>
+                                    <div class="item">
+                                        <img src="./item.png" alt="">
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -415,7 +445,7 @@
                             </div>
                         </div>
                         </div>
-                       </div>
+                    </div>
                    </div>
                 </div>
             </div>
@@ -569,5 +599,26 @@
         </div>
     </section>
     <!-- End-Footer -->
+    <script>
+        $('.owl-carousel').owlCarousel({
+          rtl:true,
+          loop:true,
+          margin:10,
+          nav:false,
+          pagination:true,
+          responsive:
+          {
+              0:{
+              items:1
+              },
+              600:{
+              items:3
+              },
+              1000:{
+              items:5
+              }
+          }
+      })
+    </script>
 </body>
 </html>
