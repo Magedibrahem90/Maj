@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Digital advertising placements – 1</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- bootstrap script  -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <!-- Font awsome  -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <!-- owel -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- Main nav-bar -->
+    <section id="Main-nav-bar">
+        <main>
+            <nav class="navbar navbar-expand-lg navbar-light container" id="nav-bar-container">
+                <a class="navbar-brand" href="#">
+                    <img src="../company/nav-logo.png" alt="Footer logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav m-auto">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">About Entasher</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Entasher pro</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">How it works</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Find a Job</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#" id="pro">Receive offers</a>
+                      </li>
+                  </ul>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <button class="btn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <button class="btn" type="submit">
+                        Sign In
+                    </button>
+                    <button class="btn" id="send-req-btn">Join</button>
+                </div>
+              </nav>
+        </main>
+    </section>
+    <!-- search results -->
+    <section id="search_content">
+        <div class="container-fluid p-0">
+            <div class="row"> <!-- results -->
+                <div class="col-md-10 m-auto">
+                    <div class="container">
+                        <div class="row search-form">
+                            <div class="col-md-12">
+                                <form action="">
+                                    <div class="form-group row">
+                                        <div class="col-md-6">
+                                            <div class="input">
+                                                <input id="my-input" class="form-control" type="text" name="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 p-0">
+                                            <div class="form-btns">
+                                                <button id="active" class="btn btn-primary">Projects</button>
+                                                <button class="btn btn-primary">Clients</button>
+                                                <button class="btn btn-primary">Agencies</button>
+                                                <button class="btn btn-primary">Influencers</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="row Filter">  <!-- Filter -->
+                            <div class="col-md-7"> <!-- Left -->
+                                <div class="Filter-btn d-flex">
+                                    <div class="dropdown show"> <!-- Category -->
+                                        <a class="btn btn-outline-primary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Category
+                                            <i class="fas fa-chevron-down"></i>
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                          <a class="dropdown-item" href="#">option</a>
+                                          <a class="dropdown-item" href="#">option</a>
+                                          <a class="dropdown-item" href="#">option</a>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown show"> <!-- Category -->
+                                        <a class="btn btn-outline-primary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Location
+                                            <i class="fas fa-chevron-down"></i>
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                          <a class="dropdown-item" href="#">option</a>
+                                          <a class="dropdown-item" href="#">option</a>
+                                          <a class="dropdown-item" href="#">option</a>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown show"> <!-- Category -->
+                                        <a class="btn btn-outline-primary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Followers
+                                            <i class="fas fa-chevron-down"></i>
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                          <a class="dropdown-item" href="#">option</a>
+                                          <a class="dropdown-item" href="#">option</a>
+                                          <a class="dropdown-item" href="#">option</a>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown show"> <!-- Category -->
+                                        <a class="btn btn-outline-primary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Location
+                                            <i class="fas fa-chevron-down"></i>
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                          <a class="dropdown-item" href="#">option</a>
+                                          <a class="dropdown-item" href="#">option</a>
+                                          <a class="dropdown-item" href="#">option</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5"> <!-- Right -->
+                                <div class="sort-btn">
+                                    <p>Sort by</p>
+                                    <select class="custom-select" id="inputGroupSelect01">
+                                        <option selected>Popular Projects</option>
+                                        <option value="1">Popular Projects</option>
+                                        <option value="2">Popular Projects</option>
+                                        <option value="3">Popular Projects</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row"> <!-- search items  -->
+                            <div class="col-md-3 p-2"> <!-- item -->
+                                <div class="card">
+                                    <img class="card-img-top" src="./item.png" alt="">
+                                    <div class="card-body p-2">
+                                        <div class="d-flex justify-content-between">
+                                            <div>
+                                                <h6 class="card-title mb-0 font-weight-bold">Client Name</h5>
+                                                <p class="card-text mb-0">Small description</p>
+                                            </div>
+                                            <div class="followers">
+                                                <span>
+                                                    <i class="fas fa-users"></i>
+                                                </span>
+                                                <span>
+                                                    1.5M
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 p-2"> <!-- item -->
+                                <div class="card">
+                                    <img class="card-img-top" src="./item.png" alt="">
+                                    <div class="card-body p-2">
+                                        <div class="d-flex justify-content-between">
+                                            <div>
+                                                <h6 class="card-title mb-0 font-weight-bold">Client Name</h5>
+                                                <p class="card-text mb-0">Small description</p>
+                                            </div>
+                                            <div class="followers">
+                                                <span>
+                                                    <i class="fas fa-users"></i>
+                                                </span>
+                                                <span>
+                                                    1.5M
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 p-2"> <!-- item -->
+                                <div class="card">
+                                    <img class="card-img-top" src="./item.png" alt="">
+                                    <div class="card-body p-2">
+                                        <div class="d-flex justify-content-between">
+                                            <div>
+                                                <h6 class="card-title mb-0 font-weight-bold">Client Name</h5>
+                                                <p class="card-text mb-0">Small description</p>
+                                            </div>
+                                            <div class="followers">
+                                                <span>
+                                                    <i class="fas fa-users"></i>
+                                                </span>
+                                                <span>
+                                                    1.5M
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 p-2"> <!-- item -->
+                                <div class="card">
+                                    <img class="card-img-top" src="./item.png" alt="">
+                                    <div class="card-body p-2">
+                                        <div class="d-flex justify-content-between">
+                                            <div>
+                                                <h6 class="card-title mb-0 font-weight-bold">Client Name</h5>
+                                                <p class="card-text mb-0">Small description</p>
+                                            </div>
+                                            <div class="followers">
+                                                <span>
+                                                    <i class="fas fa-users"></i>
+                                                </span>
+                                                <span>
+                                                    1.5M
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 p-2"> <!-- item -->
+                                <div class="card">
+                                    <img class="card-img-top" src="./item.png" alt="">
+                                    <div class="card-body p-2">
+                                        <div class="d-flex justify-content-between">
+                                            <div>
+                                                <h6 class="card-title mb-0 font-weight-bold">Client Name</h5>
+                                                <p class="card-text mb-0">Small description</p>
+                                            </div>
+                                            <div class="followers">
+                                                <span>
+                                                    <i class="fas fa-users"></i>
+                                                </span>
+                                                <span>
+                                                    1.5M
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 p-2"> <!-- item -->
+                                <div class="card">
+                                    <img class="card-img-top" src="./item.png" alt="">
+                                    <div class="card-body p-2">
+                                        <div class="d-flex justify-content-between">
+                                            <div>
+                                                <h6 class="card-title mb-0 font-weight-bold">Client Name</h5>
+                                                <p class="card-text mb-0">Small description</p>
+                                            </div>
+                                            <div class="followers">
+                                                <span>
+                                                    <i class="fas fa-users"></i>
+                                                </span>
+                                                <span>
+                                                    1.5M
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 p-2"> <!-- item -->
+                                <div class="card">
+                                    <img class="card-img-top" src="./item.png" alt="">
+                                    <div class="card-body p-2">
+                                        <div class="d-flex justify-content-between">
+                                            <div>
+                                                <h6 class="card-title mb-0 font-weight-bold">Client Name</h5>
+                                                <p class="card-text mb-0">Small description</p>
+                                            </div>
+                                            <div class="followers">
+                                                <span>
+                                                    <i class="fas fa-users"></i>
+                                                </span>
+                                                <span>
+                                                    1.5M
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 p-2"> <!-- item -->
+                                <div class="card">
+                                    <img class="card-img-top" src="./item.png" alt="">
+                                    <div class="card-body p-2">
+                                        <div class="d-flex justify-content-between">
+                                            <div>
+                                                <h6 class="card-title mb-0 font-weight-bold">Client Name</h5>
+                                                <p class="card-text mb-0">Small description</p>
+                                            </div>
+                                            <div class="followers">
+                                                <span>
+                                                    <i class="fas fa-users"></i>
+                                                </span>
+                                                <span>
+                                                    1.5M
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 p-2"> <!-- item -->
+                                <div class="card">
+                                    <img class="card-img-top" src="./item.png" alt="">
+                                    <div class="card-body p-2">
+                                        <div class="d-flex justify-content-between">
+                                            <div>
+                                                <h6 class="card-title mb-0 font-weight-bold">Client Name</h5>
+                                                <p class="card-text mb-0">Small description</p>
+                                            </div>
+                                            <div class="followers">
+                                                <span>
+                                                    <i class="fas fa-users"></i>
+                                                </span>
+                                                <span>
+                                                    1.5M
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 p-2"> <!-- item -->
+                                <div class="card">
+                                    <img class="card-img-top" src="./item.png" alt="">
+                                    <div class="card-body p-2">
+                                        <div class="d-flex justify-content-between">
+                                            <div>
+                                                <h6 class="card-title mb-0 font-weight-bold">Client Name</h5>
+                                                <p class="card-text mb-0">Small description</p>
+                                            </div>
+                                            <div class="followers">
+                                                <span>
+                                                    <i class="fas fa-users"></i>
+                                                </span>
+                                                <span>
+                                                    1.5M
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 p-2"> <!-- item -->
+                                <div class="card">
+                                    <img class="card-img-top" src="./item.png" alt="">
+                                    <div class="card-body p-2">
+                                        <div class="d-flex justify-content-between">
+                                            <div>
+                                                <h6 class="card-title mb-0 font-weight-bold">Client Name</h5>
+                                                <p class="card-text mb-0">Small description</p>
+                                            </div>
+                                            <div class="followers">
+                                                <span>
+                                                    <i class="fas fa-users"></i>
+                                                </span>
+                                                <span>
+                                                    1.5M
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 p-2"> <!-- item -->
+                                <div class="card">
+                                    <img class="card-img-top" src="./item.png" alt="">
+                                    <div class="card-body p-2">
+                                        <div class="d-flex justify-content-between">
+                                            <div>
+                                                <h6 class="card-title mb-0 font-weight-bold">Client Name</h5>
+                                                <p class="card-text mb-0">Small description</p>
+                                            </div>
+                                            <div class="followers">
+                                                <span>
+                                                    <i class="fas fa-users"></i>
+                                                </span>
+                                                <span>
+                                                    1.5M
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                   </div>
+                </div>
+            </div>
+            <div class="row">
+            <div class="col-md-12">
+                <div class="paination text-center py-5">
+                    <h1>Add pagintaion here</h1>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <section id="Main-Footer">
+        <div class="container">
+            <!-- links -->
+            <div class="links-container">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="company-footer-links">
+                            <p>Entasher</p>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <ul>
+                                        <li id="about">
+                                            <a href="/company/company.html">About Us</a>
+                                        </li>
+                                        <li id="contact">
+                                            <a href="/company/company.html">Contact</a>
+                                        </li>
+                                        <li id="careers">
+                                            <a href="/company/company.html">Careers</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Privacy Policy</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4">
+                                    <ul>
+                                        <li id="about">
+                                            <a href="">Blog</a>
+                                        </li>
+                                        <li id="about">
+                                            <a href="">Find a Job</a>
+                                        </li>
+                                        <li id="about">
+                                            <a href="">Pricing</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4">
+                                    <ul>
+                                        <li id="about">
+                                            <a href="">Pricing</a>
+                                        </li>
+                                        <li id="about">
+                                            <a href="">Subdcribe Newslatter</a>
+                                        </li>
+                                        <li id="about">
+                                            <a href="">Clients</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="Footer-links">
+                            <p>Support</p>
+                            <ul>
+                                <li>
+                                    <a href="../how it works/index.html">How it Works</a>
+                                </li>
+                                <li>
+                                    <a href="">Help & Support</a>
+                                </li>
+                                <li id="FAQS">
+                                    <a href="/company/company.html">FAQs</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="Footer-links">
+                            <p>For Client</p>
+                            <ul>
+                                <li>
+                                    <a href="">Profile</a>
+                                </li>
+                                <li>
+                                    <a href="">Send a Request</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="Footer-links">
+                            <p>For Agency</p>
+                            <ul>
+                                <li>
+                                    <a href="">Dashboard</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Social icon  -->
+            <div class="social-container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="social-icon">
+                            <div class="icon">
+                                <a href="https://www.facebook.com" title="twitter">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </div>
+                            <div class="icon">
+                                <a href="https://www.facebook.com" title="Facebook">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </div>
+                            <div class="icon">
+                                <a href="https://www.facebook.com" title="linkedin">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </div>
+                            <div class="icon">
+                                <a href="https://www.facebook.com" title="instagram">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- CopyRights -->
+            <div class="copyRights-container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="Footer-logo">
+                            <img src="../company/logo.png" alt="Footer logo">
+                        </div>
+                        <div class="Copy-rights">
+                            <p>© Entasher Ltd. 2020</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End-Footer -->
+</body>
+</html>
