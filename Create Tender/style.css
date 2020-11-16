@@ -98,6 +98,8 @@ section#header {
     max-width: 70%;
     margin: 3rem auto;
     border-radius: 7px;
+    box-shadow: -10px -10px 10px #ddd,
+                10px 10px 10px #ddd;
 }
 #form-container .container
 {
