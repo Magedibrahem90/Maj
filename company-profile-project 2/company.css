@@ -123,17 +123,20 @@ section#header {
 .header-container .avatar-img img {
     max-width: 200px;
 }
-
+/* Services-buttons */
 #Services-buttons button {
     background-color: #0101ff1c;
     border: none;
     color: blue;
-    font-weight: bold;
     margin: 5px;
-    font-size: 14px;
+    font-size: 10px;
+    width: 100%;
 }
-
-
+.buttons-container .Services-button
+{
+    padding: 0 3px !important;
+}
+/* Services-buttons */
 /* end header */
 
 
@@ -467,6 +470,20 @@ section#header {
         font-weight: bold;
         color: #3671C7;
     }
+    /* Services-buttons */
+    .buttons-container .col-md-3
+        {
+            width: 33.33%;
+        }
+        .buttons-container .col-md-3 
+        {
+            width: 33%;
+        }
+        .buttons-container .col-md-3 button
+        {
+            width: 100%;
+        }
+        /* Services-buttons */
     #sticky-buttons-container {
         background-color: #fff;
         position: fixed;
@@ -594,4 +611,20 @@ section#header {
     .navbar-light .navbar-toggler {
         order: 1;
     }
+    /* Services-buttons */
+    #Services-buttons .buttons-container 
+    {
+        margin-top: 12px;
+    }
+    #Services-buttons .Services-button button
+    {
+        font-size: 10px 
+    }
+    #Services-buttons button
+        {
+            margin-top: 24px;
+          
+        }
+       
+        /* Services-buttons */
 }

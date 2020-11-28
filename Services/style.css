@@ -160,6 +160,14 @@ body.fade-out {
     cursor: pointer;
     padding-right: 12px;
 }
+.text-container
+{
+    margin-left: 0px !important;
+}
+.text-content
+{
+    margin-left: 0 !important;
+}
 
 
 /* End */
@@ -458,6 +466,12 @@ body.fade-out {
     #Main-nav-bar #nav-bar-container #send-req-btn br {
         display: none;
     }
+    /* search results  */
+     h5.card-title
+    {
+        font-size: 0.75rem
+    }
+    /* search results  */
 }
 
 @media (min-width:1920px) {
@@ -495,6 +509,9 @@ body.fade-out {
 }
 
 @media (max-width: 767px) {
+    #search_content .media-dirc {
+        flex-direction: column-reverse
+    }
     #search_content .Filter {
         display: none;
     }
